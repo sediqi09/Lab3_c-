@@ -9,15 +9,12 @@ private:
     vector<int> grades;
 
 public:
-    // Constructor that initializes only the name and sets grades as an empty vector
     Student(string studentName)
         : name(studentName), grades() {}
 
-    // Constructor that initializes both name and grades
     Student(string studentName, vector<int> studentGrades)
         : name(studentName), grades(studentGrades) {}
 
-    // Method to return the string representation of the student
     string toString() const {
         string result = name + ": [";
         if (grades.empty()) {
