@@ -4,16 +4,14 @@ using namespace std;
 
 class Point {
 private:
-    int x, y; // Coordinates of the point
+    int x, y;
 
 public:
-    // Constructor to initialize the point with coordinates
     Point(int xCoord, int yCoord) {
         x = xCoord;
         y = yCoord;
     }
 
-    // Method to return the string representation of the point
     string toString() const {
         return "{" + to_string(x) + ";" + to_string(y) + "}";
     }
